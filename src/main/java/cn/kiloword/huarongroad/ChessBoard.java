@@ -3,9 +3,9 @@
  */
 package cn.kiloword.huarongroad;
 
-import static cn.kiloword.huarongroad.Chess.BORAD_GRID_PX;
 import static cn.kiloword.huarongroad.Chess.BOARD_HEIGHT;
 import static cn.kiloword.huarongroad.Chess.BOARD_WIDTH;
+import static cn.kiloword.huarongroad.Chess.BORAD_GRID_PX;
 import static cn.kiloword.huarongroad.Constants.cao;
 import static cn.kiloword.huarongroad.Constants.guan;
 import static cn.kiloword.huarongroad.Constants.huang;

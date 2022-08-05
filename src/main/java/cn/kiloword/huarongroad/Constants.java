@@ -4,11 +4,9 @@
 package cn.kiloword.huarongroad;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 import cn.kiloword.huarongroad.ui.theme.ChessAssets;
 import cn.kiloword.huarongroad.ui.theme.DarkChess;
-import cn.kiloword.huarongroad.ui.theme.WoodChess;
 
 /**
  * @author Fang Yun
@@ -34,8 +32,7 @@ public class Constants {
 		try {
 			Constructor<?> constructor = Class.forName(c).getConstructor(new Class[] {});
 			return (ChessAssets) constructor.newInstance();
-		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
-				| NoSuchMethodException | SecurityException | ClassNotFoundException e) {
+		} catch (Exception e) {
 			throw new RuntimeException();
 		}
 	}
