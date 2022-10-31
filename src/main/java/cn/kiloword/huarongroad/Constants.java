@@ -24,7 +24,7 @@ public class Constants {
 			new Chess("卒2", c.getZu(), 1, 1), new Chess("卒3", c.getZu(), 1, 1), };
 
 	private static ChessAssets initTheme() {
-		String c = System.getProperty("theme");
+		String c = System.getProperty("theme", DarkChess.class.getSimpleName());
 		if ("${theme}".equals(c)) {
 			c = DarkChess.class.getSimpleName();
 		}
